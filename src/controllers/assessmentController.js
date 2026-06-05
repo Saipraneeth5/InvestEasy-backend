@@ -61,10 +61,12 @@ const createAssessment = async (req, res) => {
             assessment,
         });
     } catch (error) {
-        res.status(500).json({
-            message: error.message,
-        });
-    }
+    console.error(error);
+
+    res.status(500).json({
+        message: error.message,
+    });
+}
 };
 const getAssessments = async (req, res) => {
     try {
