@@ -56,8 +56,9 @@ ${question}
         });
     } catch (error) {
         res.status(500).json({
-            message: error.message,
-        });
+  answer:
+    "The AI tutor is currently unavailable. Please try again in a few moments."
+});
     }
 };
 
