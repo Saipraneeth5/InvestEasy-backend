@@ -8,9 +8,7 @@ const recommendationRoutes = require("./routes/recommendationRoutes");
 const aiRoutes = require("./routes/aiRoutes");
 const cors = require("cors");
 
-app.use(cors({
-    origin: "http://localhost:5173",
-}));
+app.use(cors());
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/assessments",assessmentRoutes);
